@@ -1,0 +1,13 @@
+{% extends "layouts/base.html" %}
+{% block title %}Book List{% endblock %}
+{% block content %}
+<h1>Books</h1>
+<ul>
+{% for book in books %}
+<li>
+<a href="{% url 'viewbook' book.id %}">{{ book.title }}</a>
+</li>
+{% endfor %}
+</ul>
+{% endblock %}
+

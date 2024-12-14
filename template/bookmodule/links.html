@@ -1,0 +1,11 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+{% block title %}Links Example{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static css/links.css' %}">
+<h1>Example of Links with Styling</h1>
+<a href="https://www.google.com" id="google" target="_blank">Visit Google</a><br>
+<a href="https://www.github.com" class="github">Visit GitHub</a><br>
+<a href="#example" class="example">Go to Example Section</a><br>
+<div id="example" class="example-box">This is the example section</div>
+{% endblock %}
